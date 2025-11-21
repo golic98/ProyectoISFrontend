@@ -102,6 +102,8 @@ JWT_SECRET=changeme
 
 📁 **Estructura de Carpetas del Proyecto**
 
+**Carpeta cliente**
+
 ![alt text](image.png)
 
 **api**: Dentro de esta carpeta se almacenan las archivos que contienen las rutas que se establecieron 
@@ -121,6 +123,8 @@ tablas, barra de navegación y otros componentes.
 
 **main.js**: Aquí se implementa el llamado de todas las funciones, y la gestión de las rutas, utilizando las mejores practicas para cada método.
 
+
+**Carpeta de service**
 
 ![alt text](image-2.png)
 
