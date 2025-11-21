@@ -1,6 +1,7 @@
 **DOCUMENTACIÓN**
 
 📌 **1️⃣ Nombre del Proyecto**
+
 Comunidad DDG
 
 🚀 **Descripción del Proyecto**
