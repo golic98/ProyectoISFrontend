@@ -45,8 +45,11 @@ manejar y bastante intuitiva.
 📦 Requisitos Previos
 
 Node.js >= v22.20.0
+
 NPM >= 10.9.3
+
 Git
+
 MongoDB Atlas con un cluster configurado
 
 ⚙️ Instalación
