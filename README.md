@@ -201,9 +201,9 @@ git checkout -b feature/nueva-funcionalidad
 
 **Paso 6**: Hacer Pull Request describiendo:
 
-Qué se añadió
+1. Qué se añadió
 
-Qué problema soluciona
+2. Qué problema soluciona
 
-Cambios importantes del código
+3. Cambios importantes del código
 
