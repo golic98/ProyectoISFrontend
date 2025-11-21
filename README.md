@@ -1,4 +1,4 @@
-**DOCUMENTACIÓN**
+**DOCUMENTACIÓN TÉCNICA**
 
 📌 **1️⃣ Nombre del Proyecto**
 
