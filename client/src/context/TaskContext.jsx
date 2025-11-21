@@ -1,5 +1,11 @@
+// Importa hooks de React para crear contexto, manejar estados y usar contexto.
 import { createContext, useContext, useState } from "react";
+
+// Importa funciones de la API relacionadas con horarios y visitas de vigilantes.
 import { createNewSchedule, createVisit, getAllSchedule, getVisits } from "../api/vigilant.js";
+
+// Importa funciones de la API relacionadas con tareas (tasks).
+// Se incluyen versiones duplicadas (1 y 2) para distintos contextos o endpoints.
 import {
     createTaskRequest,
     getTaskRequest,
@@ -17,8 +23,11 @@ import {
     updateTaskRequest2
 } from "../api/task.js";
 
+// Crea un contexto para gestionar tareas y horarios globalmente.
 const TaskContext = createContext();
 
+// Hook personalizado para acceder al contexto de tareas.
+// Lanza un error si se intenta usar fuera del TaskProvider.
 export const useTask = () => {
     const context = useContext(TaskContext);
 
@@ -28,18 +37,21 @@ export const useTask = () => {
     return context;
 }
 
+// Provider del contexto de tareas, envuelve componentes que necesitan acceso a tareas y horarios.
 export function TaskProvider({ children }) {
 
-    const [tasks, setTasks] = useState([]);
-    const [tasks2, setTasks2] = useState([]);
-    const [tasksHome, setTaskHome] = useState([]);
-    const [tasksHome2, setTaskHome2] = useState([]);
-    const [tasksAdmin, setTaskAdmin] = useState([]);
-    const [tasksAdmin2, setTaskAdmin2] = useState([]);
-    const [addObject] = useState([]);
-    const [addVisit, setAddVisit] = useState([]);
-    const [setSchedules] = useState([]);
+    // Estados para distintos tipos de tareas y vistas.
+    const [tasks, setTasks] = useState([]);             // Lista general de tasks
+    const [tasks2, setTasks2] = useState([]);           // Lista duplicada para otro contexto
+    const [tasksHome, setTaskHome] = useState([]);      // Tasks para la vista Home
+    const [tasksHome2, setTaskHome2] = useState([]);    // Tasks Home duplicado
+    const [tasksAdmin, setTaskAdmin] = useState([]);    // Tasks para vista Admin
+    const [tasksAdmin2, setTaskAdmin2] = useState([]);  // Tasks Admin duplicado
+    const [addObject] = useState([]);                   // Objeto adicional para tareas (no se setea)
+    const [addVisit, setAddVisit] = useState([]);       // Lista de visitas creadas
+    const [setSchedules] = useState([]);               // Horarios de vigilantes (no usado actualmente)
 
+    // Obtener tareas para vista Admin
     const getTaskAdmin = async () => {
         try {
             const res = await getTaskAdminRequest();
@@ -58,6 +70,7 @@ export function TaskProvider({ children }) {
         }
     }
 
+    // Obtener tareas para vista Home
     const getTaskHome = async () => {
         try {
             const res = await getTaskHomeRequest();
@@ -76,6 +89,7 @@ export function TaskProvider({ children }) {
         }
     }
 
+    // Obtener lista general de tareas
     const getTasks = async () => {
         try {
             const res = await getTaskRequest();
@@ -94,7 +108,7 @@ export function TaskProvider({ children }) {
         }
     }
 
-
+    // Crear nueva tarea y agregar a la lista Admin
     const createTask = async (task) => {
         try {
             const res = await createTaskRequest(task);
@@ -115,10 +129,10 @@ export function TaskProvider({ children }) {
         }
     }
 
+    // Eliminar tarea
     const deleteTask = async (id) => {
         try {
-            const res = await deleteTaskRequest(id);
-            console.log(res);
+            await deleteTaskRequest(id);
         } catch (error) {
             console.log(error);
         }
@@ -126,13 +140,13 @@ export function TaskProvider({ children }) {
 
     const deleteTask2 = async (id) => {
         try {
-            const res = await deleteTaskRequest2(id);
-            console.log(res);
+            await deleteTaskRequest2(id);
         } catch (error) {
             console.log(error);
         }
     }
 
+    // Obtener una tarea específica
     const oneTask = async (id) => {
         try {
             const res = await getOneTaskRequest(id);
@@ -151,6 +165,7 @@ export function TaskProvider({ children }) {
         }
     };
 
+    // Actualizar tarea
     const updateTask = async (id, task) => {
         try {
             await updateTaskRequest(id, task);
@@ -167,31 +182,36 @@ export function TaskProvider({ children }) {
         }
     };
 
+    // Crear nuevo horario para vigilante
     const createScheduleVigilant = async (object) => {
         try {
-            const res = await createNewSchedule(object);
+            await createNewSchedule(object);
         } catch (error) {
             console.log(error);
         }
     }
 
+    // Crear nueva visita para vigilante
     const createVisitVigilant = async (visit) => {
         try {
-            const res = await createVisit(visit);
+            await createVisit(visit);
         } catch (error) {
             console.log(error);
         }
     }
 
+    // Obtener todos los horarios de vigilantes
     const getSchedules = async () => {
         try {
             const res = await getAllSchedule();
-            setSchedules(res.data);
+            //setSchedules(res.data); // actualmente comentado
+            return res;
         } catch (error) {
             console.log(error);
         }
     }
 
+    // Obtener visitas de vigilantes
     const getVisitVigilant = async () => {
         try {
             const res = await getVisits();
@@ -201,6 +221,7 @@ export function TaskProvider({ children }) {
         }
     }
 
+    // Provee todos los estados y funciones del contexto a los componentes hijos.
     return (
         <TaskContext.Provider
             value={{
