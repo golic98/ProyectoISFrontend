@@ -209,3 +209,13 @@ git checkout -b feature/nueva-funcionalidad
 
 
 **📡 5️⃣. Documentación de API**
+
+
+**DOCUMENTACIÓN DE LÓGICA DE NEGOCIO**
+
+**1. Diagrama UML**
+
+**1.1 Diagramas de Casos de Uso - Actores y sus interacciones con el sistema.**
+
+
+![alt text](image-7.png)
