@@ -150,6 +150,7 @@ tablas, barra de navegación y otros componentes.
 **app.js**: Es el punto principal de configuración de una aplicación Node.js con Express.
 
 
+
 🗄️ **Diagrama de Base de Datos**
 
 
