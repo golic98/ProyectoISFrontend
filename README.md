@@ -78,4 +78,14 @@ PORT=3000
 JWT_SECRET=changeme
 
 
-![alt text](image.png)
+
+📘 2️⃣ Documentación de Arquitectura
+
+
+
+![alt text](image-1.png)
+
+
+🧑‍💻
+
+🏗️ 2️⃣ Decisiones Arquitectónicas
