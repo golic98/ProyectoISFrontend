@@ -76,3 +76,6 @@ MONGO_URL=mongodb+srv://<usuario>:<password>@cluster.mongodb.net/?retryWrites=tr
 PORT=3000
 
 JWT_SECRET=changeme
+
+
+![alt text](image.png)
