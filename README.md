@@ -155,3 +155,55 @@ tablas, barra de navegación y otros componentes.
 
 
 ![alt text](image-6.png)
+
+
+📘 **4. Manual de Desarrollo / Contribución**
+
+**🧩 4.1. Guía de Estilo de Código**
+
+✔ JavaScript Standard Style
+✔ Variables y funciones en camelCase
+✔ Uso de async/await en lugar de then/catch
+✔ Código modular y reutilizable
+
+
+🔄 4.2. **Estrategia de Branching (GIT)**
+
+**Rama**
+
+main: Contiene la versión estable y en producción
+
+develop: Funcionalidades completas pero en pruebas
+
+🛠 4.3. **Cómo Agregar Nuevas Funcionalidades**
+
+Guía paso a paso para futuros desarrolladores:
+
+**Paso 1**: Crear nueva rama
+
+git checkout -b feature/nueva-funcionalidad
+
+**Paso 2**: Seguir una estructura de carpetas, por ejemplo: en capas
+
+**Paso 3**: Validar entrada de datos con schemas.
+
+**Paso 4**: Probar en local con: npm run dev
+
+**Paso 5**: Escribir commits con convención conventional commits: 
+
+**feat**: Nueva funcionalidad
+
+**fix**: Corrección de error
+
+**docs**: Documentación
+
+**refactor**: Mejora sin cambiar comportamiento
+
+**Paso 6**: Hacer Pull Request describiendo:
+
+Qué se añadió
+
+Qué problema soluciona
+
+Cambios importantes del código
+
