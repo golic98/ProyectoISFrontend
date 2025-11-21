@@ -87,7 +87,7 @@ JWT_SECRET=changeme
 
 
 
-🏗️ 2️⃣ **Decisiones Arquitectónicas**
+🏗️  **Decisiones Arquitectónicas**
 
 **React.js** ➝ permite una interfaz dinámica, rápida y modular para mejorar la experiencia del usuario.
 
@@ -98,3 +98,10 @@ JWT_SECRET=changeme
 **JWT** ➝ seguridad basada en tokens para manejo de roles (admin, usuario, vigilante).
 
 **Arquitectura cliente-servidor** ➝ separa responsabilidades y facilita el mantenimiento del proyecto.
+
+
+📁 **Estructura de Carpetas del Proyecto**
+
+![alt text](image.png)
+
+![alt text](image-2.png)
