@@ -104,4 +104,22 @@ JWT_SECRET=changeme
 
 ![alt text](image.png)
 
+**api**: Dentro de esta carpeta se almacenan las archivos que contienen las rutas que se establecieron 
+en el backend.
+
+**assets**: Aquí se guardan las imágenes que se utilizaron.
+
+**components**: Aquí se guardan los archivos que se utilizaron en varias partes de la aplicación, como
+tablas, barra de navegación y otros componentes.
+
+**context**: Aquí existen 2 archivos donde se mandan a llamar las rutas de la carpeta api, y en estos se aplican las funcionalidades para los métodos correspondientes: POST, GET, UPDATE, DELETE.
+
+**pages**: Aquí están carpetas como: admin, home, login, login-access, register, vigilant; En ellas están las vistas, como la estructura y sus diseños de cada rol que existe en nuestra aplicación.
+
+
+**protected**: Archivos donde se maneja las configuraciones para poder aplicar, en cada rol, las rutas proteguidas.
+
+**main.js**: Aquí se implementa el llamado de todas las funciones, y la gestión de las rutas, utilizando las mejores practicas para cada método.
+
+
 ![alt text](image-2.png)
