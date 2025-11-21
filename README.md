@@ -79,13 +79,22 @@ JWT_SECRET=changeme
 
 
 
-📘 2️⃣ Documentación de Arquitectura
+📘 2️⃣ **Documentación de Arquitectura**
 
-
+📌 **Diagrama de Arquitectura del Sistema**
 
 ![alt text](image-1.png)
 
 
-🧑‍💻
 
-🏗️ 2️⃣ Decisiones Arquitectónicas
+🏗️ 2️⃣ **Decisiones Arquitectónicas**
+
+**React.js** ➝ permite una interfaz dinámica, rápida y modular para mejorar la experiencia del usuario.
+
+**Node.js + Express** ➝ facilita crear una API eficiente en JavaScript con buen rendimiento y escalabilidad.
+
+**MongoDB Atlas** ➝ base NoSQL perfecta para manejar publicaciones y datos flexibles sin esquemas rígidos.
+
+**JWT** ➝ seguridad basada en tokens para manejo de roles (admin, usuario, vigilante).
+
+**Arquitectura cliente-servidor** ➝ separa responsabilidades y facilita el mantenimiento del proyecto.
