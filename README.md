@@ -53,7 +53,7 @@ NPM >= 10.9.3
 
 Git
 
-MongoDB Atlas con un cluster configurado
+Cuenta en: https://www.mongodb.com/ y un cluster creado.
 
 ⚙️ **Instalación**
 
