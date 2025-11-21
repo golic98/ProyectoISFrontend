@@ -148,3 +148,9 @@ tablas, barra de navegación y otros componentes.
 **service**: Contienen la lógica de negocios, validan, aplican reglas, procesan información.
 
 **app.js**: Es el punto principal de configuración de una aplicación Node.js con Express.
+
+
+🗄️ **Diagrama de Base de Datos**
+
+
+![alt text](image-6.png)
