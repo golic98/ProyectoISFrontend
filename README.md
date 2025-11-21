@@ -126,7 +126,7 @@ tablas, barra de navegación y otros componentes.
 
 **Carpeta de service**
 
-![alt text](image-2.png)
+![alt text](image-4.png)
 
 
 **config**: Aquí está la parte de conexión a la base de datos en la nube.
