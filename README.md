@@ -167,7 +167,7 @@ tablas, barra de navegación y otros componentes.
 ✔ Código modular y reutilizable
 
 
-🔄 4.2. **Estrategia de Branching (GIT)**
+🔄 **4.2. Estrategia de Branching (GIT)**
 
 **Rama**
 
@@ -175,7 +175,7 @@ main: Contiene la versión estable y en producción
 
 develop: Funcionalidades completas pero en pruebas
 
-🛠 4.3. **Cómo Agregar Nuevas Funcionalidades**
+🛠 **4.3. Cómo Agregar Nuevas Funcionalidades**
 
 Guía paso a paso para futuros desarrolladores:
 
