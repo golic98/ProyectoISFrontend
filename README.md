@@ -157,7 +157,7 @@ tablas, barra de navegación y otros componentes.
 ![alt text](image-6.png)
 
 
-📘 **4. Manual de Desarrollo / Contribución**
+📘 **4️⃣. Manual de Desarrollo / Contribución**
 
 **🧩 4.1. Guía de Estilo de Código**
 
@@ -207,3 +207,5 @@ git checkout -b feature/nueva-funcionalidad
 
 3. Cambios importantes del código
 
+
+**📡 5️⃣. Documentación de API**
