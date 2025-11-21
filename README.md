@@ -123,3 +123,24 @@ tablas, barra de navegación y otros componentes.
 
 
 ![alt text](image-2.png)
+
+
+**config**: Aquí está la parte de conexión a la base de datos en la nube.
+
+**controllers**: Aquí se reciben las peticiones HTTP y devuelven una respuesta al cliente.
+
+**libs**: Código reutilizable o utilidades generales que no pertenecen a una capa específica, por ejemplo: configuración de JWT.
+
+**middlewares**: Funciones que se ejecutan antes de llegar al controller y sirven para validar, revisar permisos o transformar datos.
+
+**models**: Representan la estructura de los datos y definen cómo luce una entidad en la base de datos.
+
+**repository**: Es la capa encargada de hablar con la base de datos, contiene métodos como buscar, guardar, actualizar, eliminar.
+
+**routes**: Define las rutas HTTP de la API (endpoints).
+
+**schema**: Valida lo que envía el frontend.
+
+**service**: Contienen la lógica de negocios, validan, aplican reglas, procesan información.
+
+**app.js**: Es el punto principal de configuración de una aplicación Node.js con Express.
