@@ -25,6 +25,7 @@ será el encargado de administrar horarios en el transcurso de la semana
 a los vigilantes que estén bajo el control de él.
 
 ¿Para quién está dirigida?
+
 El objetivo fué darle una facilidad a los usuarios o a las personas que
 viven dentro de una comunidad pequeña, el hecho de estar más
 informadas de lo que pasa, que puedan compartir información para
@@ -35,6 +36,7 @@ pero a medida que la tecnología ha avanzado las personas cada vez
 más se han sumergido en el mundo de la tecnología.
 
 ¿Qué problema resuelve?
+
 Ayudar a las personas que tienen problemas para estar informadas, y poder 
 brindarles una opción en crecimiento para poder informarse con facilidad, 
 que son las tecnologías, y también el hecho de tener una interfaz fácil de 
@@ -54,6 +56,7 @@ Paso 1: Abrir terminal en la ruta que le resulte conveniente y ejecute la siguie
 Paso 2: Abrir la carpeta y encontrará 2 sub-carpetas: client y service, abrir 2 terminales y colocar: cd cliente (en la primera terminal) y luego cd service (en la otra terminal), y en ellas debe hacer: npm install, para que se instalen todas las dependencias.
 
 ▶️ Ejecución de la Aplicación
+
 En la terminal que utilizó para la sub-carpeta client hacer: npm run dev.
 En la terminal que utilizó para la sub-carpeta service hacer: npm run dev.
 
@@ -63,5 +66,7 @@ En la sub-carpeta llamada service, debe colocar en la ubicación raíz un archiv
 Y debe colocar lo siguiente, donde usuario y password son las credenciales del cluster que creó:
 
 MONGO_URL=mongodb+srv://<usuario>:<password>@cluster.mongodb.net/?retryWrites=true&w=majority
+
 PORT=3000
+
 JWT_SECRET="changeme"
